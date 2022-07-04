@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ProgettoFed.Models.Utente>
+
+@{
+    ViewData["Title"] = "Utenti";
+}
+
+<h1>Pagina di Login / Logout</h1>
+
+@using (Html.BeginForm("CheckCredential", "Utentes", FormMethod.Post))
+    {
+        <input type="text" name="name" value="Nome" onfocus="this.value=''">
+        <input type="text" name="psw" value="Password" onfocus="this.value=''"/>
+        <input type="submit" value="LogIn"/> 
+    }
+
+<a asp-action="LogOut">LogOut</a> <br><br>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            @{ 
+                if (item.Biscotto == @ViewBag.BiscottoUtente) { 
+                    <td align="right">
+                    <a asp-action="Edit" asp-route-id="@item.IdUtente">Modifica</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdUtente">Dettagli</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdUtente">Cancella</a>
+                </td>
+                }
+                }
+        </tr>
+}
+    </tbody>
+</table>

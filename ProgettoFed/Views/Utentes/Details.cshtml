@@ -1,0 +1,31 @@
+﻿@model ProgettoFed.Models.Utente
+
+@{
+    ViewData["Title"] = "Dettagli";
+}
+
+<h1>Dettagli utente</h1>
+
+<div>
+    <h4>Utente</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Psw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Psw)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdUtente">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

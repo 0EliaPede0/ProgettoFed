@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ProgettoFed.Models.Notum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Flag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TitoloTask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestoTask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCreazione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataScadenza)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int contatore = Model.Count();}
+
+        @{
+            int primo = ViewBag.primoestremo;
+            int secondo = ViewBag.secondoestremo;
+            for (Model.ElementAt(primo); primo < secondo; primo++)
+            {
+                            <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).Flag)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).TitoloTask)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).TestoTask)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).DataCreazione)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).DataScadenza)
+                            </td>
+
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@Model.ElementAt(primo).IdTask">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@Model.ElementAt(primo).IdTask">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@Model.ElementAt(primo).IdTask">Delete</a>
+                            </td>
+                </tr>
+
+
+            }
+
+        }
+
+        @{
+            bool a = true; bool b = false; primo = primo - 2;
+        }
+<a asp-action="Paginazione2" asp-controller="Notums" asp-route-check="@a" asp-route-a="@primo" asp-route-b="@secondo">Avanti</a>
+<a asp-action="Paginazione2" asp-controller="Notums" asp-route-check="@b" asp-route-a="@primo" asp-route-b="@secondo">Indietro</a>
+
+    </tbody>
+</table>

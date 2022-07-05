@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ProgettoFed.Models.Notum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Flag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TitoloTask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestoTask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCreazione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataScadenza)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+            int primo = ViewBag.primoestremo;
+            int secondo = ViewBag.secondoestremo;
+            for (Model.ElementAt(primo); primo < secondo; primo++)
+            {
+                                            <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).Flag)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).TitoloTask)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).TestoTask)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).DataCreazione)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => Model.ElementAt(primo).DataScadenza)
+                                            </td>
+
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@Model.ElementAt(primo).IdTask">Edit</a> |
+                                                <a asp-action="Details" asp-route-id="@Model.ElementAt(primo).IdTask">Details</a> |
+                                                <a asp-action="Delete" asp-route-id="@Model.ElementAt(primo).IdTask">Delete</a>
+                                            </td>
+                    </tr>
+
+
+            }
+
+        }
+        @{
+            float numeropagine = ViewBag.NumeroPagine;
+            for (float i = 0; i < numeropagine; i++)
+            {
+                     <a asp-action="Grouping" asp-route-paginacliccata="@i"> @(i+1) </a> <text>&nbsp; &nbsp; &nbsp;</text>
+            }
+
+        
+        
+        
+        
+        
+        }
+
+
+
+
+    </tbody>
+</table>

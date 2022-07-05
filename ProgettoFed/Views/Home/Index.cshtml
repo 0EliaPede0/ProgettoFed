@@ -7,3 +7,9 @@
 
 </div>
 
+
+<a asp-action="Paginazione" asp-controller="Notums" asp-route-id="">Paginazione a scorrimento</a> <br/> <br/>
+@{
+    float pagina0 = 0;
+}
+<a asp-action="Grouping" asp-controller="Notums" asp-route-paginacliccata="@pagina0">Gruppi di N pagine</a>

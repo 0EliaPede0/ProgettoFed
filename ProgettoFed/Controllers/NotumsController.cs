@@ -230,5 +230,106 @@ namespace ProgettoFed.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-    }
+        public async Task<IActionResult> Paginazione()
+        {
+            int a = 0, b = 2;
+            ViewBag.primoestremo = a;
+            ViewBag.secondoestremo = b;
+            return View(await _context.Nota.ToListAsync());
+        }
+
+
+        public async Task<IActionResult> Paginazione2(bool check, int a, int b)
+        {
+            int contatore = _context.Nota.Count();
+            if (b + 2 > contatore && check == true)
+            {
+             int c = contatore - b;
+                a = a + c;
+                b = b + c;
+                ViewBag.primoestremo = a;
+                ViewBag.secondoestremo = b;
+            }
+            else if (a - 2 < 0 && check == false)
+            {
+                int c = 0 - a;
+                a = a + c;
+                b = b + c;
+                ViewBag.primoestremo = a;
+                ViewBag.secondoestremo = b;
+            }
+            else if (check == true && b < contatore)
+            {
+                a = a + 2;
+                b = b + 2;
+                ViewBag.primoestremo = a;
+                ViewBag.secondoestremo = b;
+            }
+            else if (check == false && a > 0)
+            {
+                a = a - 2;
+                b = b - 2;
+                ViewBag.primoestremo = a;
+                ViewBag.secondoestremo = b;
+            }
+            else if (check == true && b == contatore)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            else if (check == false && a == 0)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            return View(await _context.Nota.ToListAsync());
+
+
+        }
+        public async Task<IActionResult> ALL()
+        {
+            return View(await _context.Nota.ToListAsync());
+        }
+
+        public async Task<IActionResult> Grouping(float paginacliccata)
+        {
+            float contatore = _context.Nota.Count();
+            float gruppo = 10;
+            float NumeroPagine = 0;
+            float divisione = contatore / gruppo;
+            float DivisioneTonda = divisione;
+            DivisioneTonda = (float)Math.Truncate(DivisioneTonda);
+            if (divisione == DivisioneTonda)
+            {
+                NumeroPagine = divisione;
+            }
+            else 
+            {
+                NumeroPagine = (DivisioneTonda + 1);
+            }
+            if (paginacliccata == DivisioneTonda)
+            {
+                float rimanenza = (gruppo * (divisione - DivisioneTonda));
+                ViewBag.NumeroPagine = NumeroPagine;
+                int primoestremo = ((int)(paginacliccata * gruppo));
+                int secondoestremo = ((int)((paginacliccata * gruppo) + rimanenza));
+                ViewBag.primoestremo = primoestremo;
+                ViewBag.secondoestremo = secondoestremo;
+            }
+            else 
+            {
+                ViewBag.NumeroPagine = NumeroPagine;
+                int primoestremo = ((int)(paginacliccata * gruppo));
+                int secondoestremo = ((int)((paginacliccata * gruppo) + gruppo));
+                ViewBag.primoestremo = primoestremo;
+                ViewBag.secondoestremo = secondoestremo;
+
+            }
+
+            return View(await _context.Nota.ToListAsync());
+        }
+
+
+
+ }
 }

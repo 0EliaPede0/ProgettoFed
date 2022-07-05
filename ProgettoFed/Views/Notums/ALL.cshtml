@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ProgettoFed.Models.Notum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Flag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TitoloTask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestoTask)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCreazione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataScadenza)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+@foreach (var item in Model) 
+{
+                <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Flag)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TitoloTask)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TestoTask)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataCreazione)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataScadenza)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdTask">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdTask">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdTask">Delete</a>
+                </td>
+            </tr>
+                    
+          }
+
+
+    </tbody>
+</table>

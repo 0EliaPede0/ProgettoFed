@@ -9471,11 +9471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peddy\\source\\repos\\ProgettoFed\\ProgettoFed\\ProgettoFed.csproj",
+      "projectUniqueName": "C:\\Users\\peddy\\OneDrive\\Documenti\\ProgettoFed\\ProgettoFed\\ProgettoFed.csproj",
       "projectName": "ProgettoFed",
-      "projectPath": "C:\\Users\\peddy\\source\\repos\\ProgettoFed\\ProgettoFed\\ProgettoFed.csproj",
+      "projectPath": "C:\\Users\\peddy\\OneDrive\\Documenti\\ProgettoFed\\ProgettoFed\\ProgettoFed.csproj",
       "packagesPath": "C:\\Users\\peddy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peddy\\source\\repos\\ProgettoFed\\ProgettoFed\\obj\\",
+      "outputPath": "C:\\Users\\peddy\\OneDrive\\Documenti\\ProgettoFed\\ProgettoFed\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peddy\\AppData\\Roaming\\NuGet\\NuGet.Config",

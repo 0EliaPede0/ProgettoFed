@@ -8,89 +8,89 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProgettoFed
 build_property.RootNamespace = ProgettoFed
-build_property.ProjectDir = C:\Users\peddy\source\repos\ProgettoFed\ProgettoFed\
+build_property.ProjectDir = C:\Users\peddy\OneDrive\Documenti\ProgettoFed\ProgettoFed\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\peddy\source\repos\ProgettoFed\ProgettoFed
+build_property.MSBuildProjectDirectory = C:\Users\peddy\OneDrive\Documenti\ProgettoFed\ProgettoFed
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Home/Index.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Home/Privacy.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Notums/Create.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Notums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90dW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Notums/Delete.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Notums/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90dW1zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Notums/Details.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Notums/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90dW1zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Notums/Edit.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Notums/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90dW1zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Notums/Index.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Notums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90dW1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Notums/RicercaFiltrata.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Notums/RicercaFiltrata.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90dW1zXFJpY2VyY2FGaWx0cmF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Shared/Error.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/Create.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/Delete.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/Details.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/Edit.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/Index.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/Logged.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/Logged.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xMb2dnZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Utentes/NotLogged.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Utentes/NotLogged.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRlc1xOb3RMb2dnZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/_ViewImports.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/_ViewStart.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/peddy/source/repos/ProgettoFed/ProgettoFed/Views/Shared/_Layout.cshtml]
+[C:/Users/peddy/OneDrive/Documenti/ProgettoFed/ProgettoFed/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4has0vhopq

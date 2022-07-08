@@ -13,6 +13,23 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdTask" />
+
+            <div class="form-group" hidden>
+                <label asp-for="DataCreazione" class="control-label"></label>
+                <input asp-for="DataCreazione" class="form-control" />
+                <span asp-validation-for="DataCreazione" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdTask" class="control-label"></label>
+                <input asp-for="IdTask" class="form-control" />
+                <span asp-validation-for="IdTask" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="IdUtente" class="control-label"></label>
+                <input asp-for="IdUtente" class="form-control" />
+                <span asp-validation-for="IdUtente" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <label asp-for="DataScadenza" class="control-label"></label>
                 <input asp-for="DataScadenza" class="form-control" />

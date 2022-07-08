@@ -113,10 +113,10 @@ namespace ProgettoFed.Controllers
             return View(notum);
         }
 
-        // POST: Notums/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+            // POST: Notums/Edit/5
+            // To protect from overposting attacks, enable the specific properties you want to bind to.
+            // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+            [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdTask,IdUtente,DataCreazione,DataScadenza,TitoloTask,TestoTask,Flag")] Notum notum)
         {
@@ -127,6 +127,7 @@ namespace ProgettoFed.Controllers
 
             if (ModelState.IsValid)
             {
+  
                 try
                 {
                     _context.Update(notum);
